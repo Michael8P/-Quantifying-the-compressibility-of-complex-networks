@@ -26,13 +26,12 @@ def rate_distortion(G, heuristic, num_pairs):
 	P_old = np.divide(G, np.transpose(np.tile(sum(G), (N,1))))
 
 	#Compute steady-state distribution
-	D, p_ss = sla.eigs(np.transpose(P_old),return_eigenvectors=True) #works for all networks     #need to rewrite this section
+	D, p_ss = sla.eigs(np.transpose(P_old),return_eigenvectors=True) #works for all networks    
 	D = D.real
 	p_ss = p_ss.real
 	ind = int(np.round(np.max(D))) - 1
 	p_ss = p_ss[:,ind]/sum(p_ss[:,ind])
 
-	#p_ss = sum(G,2)/sum(G(:)); % Only true for undirected networks
 	p_ss_old = p_ss
 
 	#calculate initial entropy:
@@ -79,7 +78,7 @@ def rate_distortion(G, heuristic, num_pairs):
 			#compute new stationary distribution:           
 			p_ss_temp = np.append(p_ss_old[inds_not_ij], p_ss_old[ii] + p_ss_old[jj])
             
-			#stopped here
+			
 			# Compute new transition probabilities:
 			P_temp_1 = np.sum(np.multiply(np.transpose(np.tile(p_ss_old[inds_not_ij], (2,1))), P_old[:, [ii,jj]][inds_not_ij]), axis = 1)
 			P_temp_1 = P_temp_1 / p_ss_temp[0:-1]
