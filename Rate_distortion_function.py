@@ -26,12 +26,13 @@ def rate_distortion(G, heuristic, num_pairs):
 	P_old = np.divide(G, np.transpose(np.tile(sum(G), (N,1))))
 
 	#Compute steady-state distribution
-	D, p_ss = sla.eigs(np.transpose(P_old),return_eigenvectors=True) #works for all networks    
+	D, p_ss = sla.eigs(np.transpose(P_old),return_eigenvectors=True) #works for all networks     #need to rewrite this section
 	D = D.real
 	p_ss = p_ss.real
 	ind = int(np.round(np.max(D))) - 1
 	p_ss = p_ss[:,ind]/sum(p_ss[:,ind])
 
+	#p_ss = sum(G,2)/sum(G(:)); % Only true for undirected networks
 	p_ss_old = p_ss
 
 	#calculate initial entropy:
@@ -78,7 +79,7 @@ def rate_distortion(G, heuristic, num_pairs):
 			#compute new stationary distribution:           
 			p_ss_temp = np.append(p_ss_old[inds_not_ij], p_ss_old[ii] + p_ss_old[jj])
             
-			
+			#stopped here
 			# Compute new transition probabilities:
 			P_temp_1 = np.sum(np.multiply(np.transpose(np.tile(p_ss_old[inds_not_ij], (2,1))), P_old[:, [ii,jj]][inds_not_ij]), axis = 1)
 			P_temp_1 = P_temp_1 / p_ss_temp[0:-1]
@@ -161,7 +162,6 @@ test2= np.flip(results[1][0])
 #Results from Matlab
 test3=np.array([2.5810, 2.4936,2.4483,2.4070,2.3553,2.3074,2.2547,2.1888,2.1167,2.0305,1.9632,1.8931,1.8205,1.7568,1.6888,1.6018,1.5205,1.4369,1.3518,1.2655,1.1780,1.0893,1.0026,0.8854,0.7665,0.6734,0.5811,0.4499,0.3956,0.3629,0.3302,0.2917,0.0987,0])
 
-#Plot information
 plt.title("Zachary's Karate Club")
 plt.xlabel("Distortion")
 plt.ylabel("Information rate(bits)")
