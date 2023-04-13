@@ -1,0 +1,89 @@
+Animal Samples undirected
+csvwrite('G_dolphins.csv',G_dolphins);
+csvwrite('G_lake.csv',G_lake);
+csvwrite('G_macaques.csv',G_macaques);
+csvwrite('G_sheep.csv',G_sheep);
+csvwrite('G_wetlands.csv',G_wetlands);
+csvwrite('G_zebras.csv',G_zebras);
+
+Brain Samples undirected
+csvwrite('G_FC_1.csv',G_FC_1);
+csvwrite('G_FC_2.csv',G_FC_2);
+csvwrite('G_FC_3.csv',G_FC_3);
+csvwrite('G_FC_4.csv',G_FC_4);
+csvwrite('G_FC_5.csv',G_FC_5);
+
+csvwrite('G_SC_1.csv',G_SC_1);
+csvwrite('G_SC_2.csv',G_SC_2);
+csvwrite('G_SC_3.csv',G_SC_3);
+csvwrite('G_SC_4.csv',G_SC_4);
+csvwrite('G_SC_5.csv',G_SC_5);
+
+Citation Samples undirected
+csvwrite('G_HepPh.csv',G_HepPh);
+csvwrite('G_HepTh.csv',G_HepTh);
+csvwrite('G_cora.csv',G_cora);
+csvwrite('G_dblp.csv',G_dblp);
+
+Language Samples undirected
+csvwrite('G_Austen_nouns.csv',G_Austen_nouns);
+csvwrite('G_Blake_nouns.csv',G_Blake_nouns);
+csvwrite('G_Cervantes_nouns.csv',G_Cervantes_nouns);
+csvwrite('G_Homer_nouns.csv',G_Homer_nouns);
+csvwrite('G_Plato_nouns.csv',G_Plato_nouns);
+csvwrite('G_Shakespeare_nouns.csv',G_Shakespeare_nouns);
+csvwrite('G_Whitman_nouns.csv',G_Whitman_nouns);
+
+Music Samples undirected
+csvwrite('G_Africa.csv',G_Africa);
+csvwrite('G_Beethoven.csv',G_Beethoven);
+csvwrite('G_Bohemian.csv',G_Bohemian);
+csvwrite('G_Brahms.csv',G_Brahms);
+csvwrite('G_Chopin.csv',G_Chopin);
+csvwrite('G_Clavier.csv',G_Clavier);
+csvwrite('G_HardDays.csv',G_HardDays);
+csvwrite('G_Mozart.csv',G_Mozart);
+csvwrite('G_Thriller.csv',G_Thriller);
+
+Protein Samples undirected
+csvwrite('G_Celegans.csv',G_Celegans);
+csvwrite('G_human_Figeys.csv',G_human_Figeys);
+csvwrite('G_human_Stelzl.csv',G_human_Stelzl);
+csvwrite('G_yeast.csv',G_yeast);
+
+Semantic samples undirected
+csvwrite('G_Bible.csv',G_Bible);
+csvwrite('G_Edinburgh.csv',G_Edinburgh);
+csvwrite('G_FOLDOC.csv',G_FOLDOC);
+csvwrite('G_Got.csv',G_Got);
+csvwrite('G_LesMis.csv',G_LesMis);
+csvwrite('G_ODLIS.csv',G_ODLIS);
+csvwrite('G_Roget.csv',G_Roget);
+csvwrite('G_algebra.csv',G_algebra);
+csvwrite('G_glossary.csv',G_glossary);
+
+Social Samples undirected
+csvwrite('G_AstroPh.csv',G_AstroPh);
+csvwrite('G_Facebook.csv',G_Facebook);
+csvwrite('G_HepTh.csv',G_HepTh);
+csvwrite('G_health.csv',G_health);
+csvwrite('G_highschool.csv',G_highschool);
+csvwrite('G_jazz.csv',G_jazz);
+csvwrite('G_karate.csv',G_karate);
+
+Transportation samples undirected
+csvwrite('G_Bay.csv',G_Bay);
+csvwrite('G_Chicago.csv',G_Chicago);
+csvwrite('G_EuroRoad.csv',G_EuroRoad);
+csvwrite('G_NYC.csv',G_NYC);
+csvwrite('G_OpenFlights.csv',G_OpenFlights);
+csvwrite('G_USA.csv',G_USA);
+
+Web samples undirected
+csvwrite('G_EPA.csv',G_EPA);
+csvwrite('G_Google.csv',G_Google);
+csvwrite('G_Indochina.csv',G_Indochina);
+csvwrite('G_blogs.csv',G_blogs);
+csvwrite('G_edu.csv',G_edu);
+csvwrite('G_spam.csv',G_spam);
+csvwrite('G_webbase.csv',G_webbase);
