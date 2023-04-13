@@ -1,0 +1,59 @@
+Animal Samples directed
+csvwrite('G_wetlands_d.csv',G_wetlands_d);
+
+Brain Samples directed 
+csvwrite('G_FC_1_d.csv',G_FC_1_d);
+csvwrite('G_FC_2_d.csv',G_FC_2_d);
+csvwrite('G_FC_3_d.csv',G_FC_3_d);
+csvwrite('G_FC_4_d.csv',G_FC_4_d);
+csvwrite('G_FC_5_d.csv',G_FC_5_d);
+
+
+Citation Samples directed
+csvwrite('G_HepPh_d.csv',G_HepPh_d);
+csvwrite('G_HepTh_d.csv',G_HepTh_d);
+csvwrite('G_cora_d.csv',G_cora_d);
+csvwrite('G_dblp_d.csv',G_dblp_d);
+
+Language Samples directed
+csvwrite('G_Austen_nouns_d.csv',G_Austen_nouns_d);
+csvwrite('G_Blake_nouns_d.csv',G_Blake_nouns_d);
+csvwrite('G_Cervantes_nouns_d.csv',G_Cervantes_nouns_d);
+csvwrite('G_Homer_nouns_d.csv',G_Homer_nouns_d);
+csvwrite('G_Plato_nouns_d.csv',G_Plato_nouns_d);
+csvwrite('G_Shakespeare_nouns_d.csv',G_Shakespeare_nouns_d);
+csvwrite('G_Whitman_nouns_d.csv',G_Whitman_nouns_d);
+
+Music Samples directed
+csvwrite('G_Africa_d.csv',G_Africa_d);
+csvwrite('G_Beethoven_d.csv',G_Beethoven_d);
+csvwrite('G_Bohemian_d.csv',G_Bohemian_d);
+csvwrite('G_Brahms_d.csv',G_Brahms_d);
+csvwrite('G_Chopin_d.csv',G_Chopin_d);
+csvwrite('G_Clavier_d.csv',G_Clavier_d);
+csvwrite('G_HardDays_d.csv',G_HardDays_d);
+csvwrite('G_Mozart_d.csv',G_Mozart_d);
+csvwrite('G_Thriller_d.csv',G_Thriller_d);
+
+Protein Samples directed
+csvwrite('G_Ahuman_Stelzl_d.csv',G_human_Stelzl_d);
+
+Semantic samples directed 
+csvwrite('G_Edinburgh_d.csv',G_Edinburgh_d);
+csvwrite('G_FOLDOC_d.csv',G_FOLDOC_d);
+csvwrite('G_ODLIS_d.csv',G_ODLIS_d);
+csvwrite('G_Roget_d.csv',G_Roget_d);
+
+Social Samples directed
+csvwrite('G_health_d.csv',G_health_d);
+csvwrite('G_highschool_d.csv',G_highschool_d);
+
+Transportation samples directed
+csvwrite('G_Chicago_d.csv',G_Chicago_d);
+csvwrite('G_OpenFlights_d.csv',G_OpenFlights_d);
+csvwrite('G_USA_d.csv',G_USA_d);
+
+Web samples directed
+
+csvwrite('G_Google_d.csv',G_Google_d);
+csvwrite('G_blogs_d.csv',G_blogs_d);
