@@ -13,7 +13,7 @@ This was converted to unweighted, undirected networks by using the Edgelist2Matr
 
 -----------------
 undirected_script
-current scripted used to create output based on the dataset.
+current script used to create output based on the dataset.
 Need to change based on the dataset being used. 
 ---------------
 Compressibility 
