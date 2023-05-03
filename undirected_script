@@ -41,13 +41,15 @@ def isSymmetric(mat):
     return True
 def avgClusteringCoefficient(graph):
     if isSymmetric(graph):
+        # assume the graph is represented as a numpy array
         graph[graph != 0] = 1
-        deg = np.sum(graph)   #determine node degrees
-        cn = np.diag(graph* np.triu(graph)*graph) #Determine Number of triangles in each node
-        # local clustering coefficent of each node
-        c = np.zeros(np.size(deg))
-        c[deg > 1] = np.divide(2 * cn[deg > 1] , np.multiply(deg[deg >1], deg[deg>1] - 1))
-        acc = np.mean(c[deg >1])
+
+        deg = np.sum(graph, axis=1) # determine node degrees
+        cn = np.diag(graph @ np.triu(graph) @ graph) # number of triangles for each node
+
+        # the local clustering coefficient of each node
+        c = np.zeros_like(deg)
+        c[deg > 1] = 2 * cn[deg > 1] / (deg[deg > 1] * (deg[deg > 1] - 1))
     return acc, c
 def rate_distortion(G, heuristic, num_pairs):
     #size of network
