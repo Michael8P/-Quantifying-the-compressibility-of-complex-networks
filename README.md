@@ -18,5 +18,6 @@ Need to change based on the dataset being used.
 ---------------
 Compressibility 
 How to calculate from using the rate_distortion function (outputs (S, S_low, clusters, Gs) with S being the rd_upper)
+
 compressibility_temp = np.mean(rd_upper[-1] - rd_upper)
 
