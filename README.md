@@ -11,10 +11,6 @@ SNAP tree of life
 Contains Edgelists	Network (protein interactome) data for 1,840 species
 This was converted to unweighted, undirected networks by using the Edgelist2Matrix.py script that I created
 
------------------
-undirected_script
-current script used to create output based on the dataset.
-Need to change based on the dataset being used. 
 ---------------
 Compressibility 
 How to calculate from using the rate_distortion function (outputs (S, S_low, clusters, Gs) with S being the rd_upper)
