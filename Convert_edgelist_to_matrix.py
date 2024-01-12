@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May  2 20:24:34 2023
-
-@author: micha
 """
 import networkx as nx
 import pandas as pd
