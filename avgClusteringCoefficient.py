@@ -2,6 +2,10 @@ import scipy.io
 import scipy
 import numpy as np
 def avg_clustering_coefficient(G):
+    if issparse(G):
+        G = G.toarray()
+    else:
+        G = G
     # Check if the input matrix is int32
     if G.dtype != np.int32:
         G = G.astype(np.int32)
