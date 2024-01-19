@@ -2,6 +2,10 @@ import scipy
 import numpy as np
 import pandas as pd
 def Deg_Heterogeneity(G):
+    if issparse(G):
+        G = G.toarray()
+    else:
+        G = G
     if G.dtype != np.int32:
         G = G.astype(np.int32)
     ks = np.sum(G, axis=0)
