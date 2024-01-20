@@ -35,8 +35,7 @@ def rate_distortion(G, heuristic, num_pairs):
     ind = int(np.round(np.max(D))) - 1 
     # p_ss = p_ss[:,ind]/sum(p_ss[:,ind]) # This is only for directed networks
     p_ss = np.sum(G,axis = 1) / np.sum(G)  # Only true for undirected networks
-        
-    # p_ss = sum(G,2)/sum(G(:)); % Only true for undirected networks
+    
     p_ss_old = p_ss
     
     # Calculate initial entropy:
