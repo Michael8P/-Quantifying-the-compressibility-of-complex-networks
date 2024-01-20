@@ -31,9 +31,11 @@ def rate_distortion(G, heuristic, num_pairs):
     D, p_ss = sla.eigs(np.transpose(P_old),return_eigenvectors=True)  #works for all networks 
     D = D.real
     p_ss = p_ss.real
+    p_ss = -1 * p_ss
     ind = int(np.round(np.max(D))) - 1 
-    p_ss = p_ss[:,ind]/sum(p_ss[:,ind])  
-    
+    # p_ss = p_ss[:,ind]/sum(p_ss[:,ind]) # This is only for directed networks
+    p_ss = np.sum(G,axis = 1) / np.sum(G)  # Only true for undirected networks
+        
     # p_ss = sum(G,2)/sum(G(:)); % Only true for undirected networks
     p_ss_old = p_ss
     
